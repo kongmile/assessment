@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,21 +23,21 @@
 			<input type="text" name="url" id="url" />
 			<lable for="kind">板块：</lable>
 			<select name="kind" id="kind">
-					<option value = 1 >每天不登不舒服斯基</option>
+					<option value = 1>每天不登不舒服斯基</option>
 					<option value = 2>学霸们的必争之地</option>
-					<option value= 3>原来学校还有这么多网站</option>
+					<option value = 3>原来学校还有这么多网站</option>
 			</select>
 			<input type="submit" value="提交">
 		</form>
 	</div>	
 </body>
+
 <?php
+	/*根据$_GET['id']选择板块的默认选项*/
 	$kind = $_GET['kind'];
-	echo "	<script>
+	echo "	<script>			
 				var num = {$kind}
 				var kind = document.getElementsByTagName('option');
-				console.log(kind);
-				console.log(kind[num]);
 				kind[num-1].setAttribute('selected','selected');
 			</script>"
 ?>

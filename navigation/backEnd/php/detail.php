@@ -31,11 +31,12 @@
       <input type="text" name="url" id="url" value="<?php echo $value['url'] ?>"/>
       <lable for="kind">板块：</lable>
       <select name="kind" id="kind">
-          <option value = '1' >每天不登不舒服斯基</option>
+          <option value = '1'>每天不登不舒服斯基</option>
           <option value = '2'>学霸们的必争之地</option>
-          <option value= '3'>原来学校还有这么多网站</option>
+          <option value = '3'>原来学校还有这么多网站</option>
       </select>
       <?php
+        /*根据$_GET['id']选择板块的默认选项*/
         $kind = $value['id'];
         echo "  <script>
         var num = {$kind}

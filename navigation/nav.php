@@ -75,7 +75,6 @@
         <a class="placeholder" href=""></a>
       </div>
     </div>
-
 	<div class="info">Powered By <a href="http://zeroling.com">Zeroling</a>.</div>
   </div>
   <script>
