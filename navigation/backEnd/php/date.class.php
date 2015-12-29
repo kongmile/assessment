@@ -15,6 +15,7 @@
 			$this->opera();
 		}
 
+		
 		//操作
 		public function opera(){
 		    $dsn = 'mysql:host=localhost;dbname=base'; //主机名字，数据库名
@@ -46,13 +47,13 @@
 				case "add":
 					$successTip = "已添加";
 					$failTip = "请重试";
-					$sucURL = '../../nav.php';
-					$FailURL = '../../recommend.php';
+					$sucURL = '../../back.php';
+					$FailURL = 'back.add.php';
 					break;
 				case "recommend":
 					$successTip = "推荐成功，请耐心等待管理员审核";
 					$failTip = "请重试";
-					$sucURL = '../../back.php';
+					$sucURL = '../../nav.php';
 					$FailURL = '../../recommend.php';
 					break;
 				default:
