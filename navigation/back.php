@@ -81,7 +81,7 @@
         foreach ($res as $key => $value) { ?>
       <a href="./backEnd/php/detail.php?id=<?php echo $value['id'] ?>" class="theme<?php echo rand(1, 18);?>" target="_blank"><?php echo $value['name'] ?></a>
         <?php } ?>
-        <a href="./backend/php/back.add.php?kind=1" class="more">+ 添加</a>
+        <a href="./backend/php/back.add.php?kind=3" class="more">+ 添加</a>
         <a class="placeholder" href=""></a>
         <a class="placeholder" href=""></a>
         <a class="placeholder" href=""></a>

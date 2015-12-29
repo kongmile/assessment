@@ -8,5 +8,5 @@
 	
 	$recommend = new Date();
 	$recommend->upload($name, $url, $kind);
-
+	$recommend->tip();
 ?>
